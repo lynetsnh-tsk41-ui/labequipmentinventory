@@ -1,0 +1,79 @@
+{
+  "equipment": [
+    {
+      "id": "e1",
+      "name": "Мікроскоп бінокулярний XSP-104",
+      "inventoryNumber": "OPT-001",
+      "category": "Оптика",
+      "description": "Збільшення до 1000x. LED підсвітка.",
+      "status": "Available",
+      "currentAssignee": "",
+      "createdAt": "2026-05-10T09:00:00.000Z",
+      "updatedAt": "2026-05-10T09:00:00.000Z"
+    },
+    {
+      "id": "e2",
+      "name": "Мультиметр цифровий Fluke 179",
+      "inventoryNumber": "MEAS-015",
+      "category": "Вимірювальні прилади",
+      "description": "Потребує калібрування наступного місяця.",
+      "status": "Issued",
+      "currentAssignee": "Шевченко Т.Г.",
+      "createdAt": "2026-05-11T10:30:00.000Z",
+      "updatedAt": "2026-05-12T14:20:00.000Z"
+    },
+    {
+      "id": "e3",
+      "name": "Центрифуга лабораторна СМ-6М",
+      "inventoryNumber": "LAB-042",
+      "category": "Лабораторне обладнання",
+      "description": "Шумний підшипник, відправлено в сервіс.",
+      "status": "Maintenance",
+      "currentAssignee": "",
+      "createdAt": "2026-05-12T11:15:00.000Z",
+      "updatedAt": "2026-05-18T08:00:00.000Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "l1",
+      "equipmentId": "e1",
+      "equipmentName": "Мікроскоп бінокулярний XSP-104",
+      "actionType": "Створення",
+      "details": "Додано до системи",
+      "timestamp": "2026-05-10T09:00:00.000Z"
+    },
+    {
+      "id": "l2",
+      "equipmentId": "e2",
+      "equipmentName": "Мультиметр цифровий Fluke 179",
+      "actionType": "Створення",
+      "details": "Додано до системи",
+      "timestamp": "2026-05-11T10:30:00.000Z"
+    },
+    {
+      "id": "l3",
+      "equipmentId": "e2",
+      "equipmentName": "Мультиметр цифровий Fluke 179",
+      "actionType": "Видача",
+      "details": "Видано користувачу: Шевченко Т.Г.",
+      "timestamp": "2026-05-12T14:20:00.000Z"
+    },
+    {
+      "id": "l4",
+      "equipmentId": "e3",
+      "equipmentName": "Центрифуга лабораторна СМ-6М",
+      "actionType": "Створення",
+      "details": "Додано до системи",
+      "timestamp": "2026-05-12T11:15:00.000Z"
+    },
+    {
+      "id": "l5",
+      "equipmentId": "e3",
+      "equipmentName": "Центрифуга лабораторна СМ-6М",
+      "actionType": "Обслуговування",
+      "details": "Відправлено на обслуговування",
+      "timestamp": "2026-05-18T08:00:00.000Z"
+    }
+  ]
+}

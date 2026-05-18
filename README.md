@@ -1,35 +1,28 @@
-# KPI 2026 GitHub Pages App Template
+# Lab Equipment Inventory
 
-Starter repository for small coursework web applications that are implemented from existing markdown requirements and deployed to GitHub Pages.
+A single-page web application (SPA) for automating the tracking and management of laboratory equipment. Built for purely local execution (in the browser) with GitHub Pages support.
 
-## Intended use
+## Features
+- **Equipment tracking**: Add, edit, and delete equipment (with strict validation).
+- **Status workflow**: Manage states (`Available`, `Issued`, `Maintenance`).
+- **History Logs**: Automatic auditing of all operations.
+- **Real-time Analytics**: Dashboard with item counts across statuses.
+- **Persistence**: Data automatically saved to browser's `LocalStorage`.
+- **Static Deployment**: Easily deployable via GitHub Pages with no backend required.
 
-Use this repository as a template for:
-- the teacher's demo application;
-- student repositories created after requirements are already written;
-- small GitHub Pages projects that must stay within static hosting constraints.
+## Stack
+- HTML5
+- Vanilla JS (ES Modules)
+- Vanilla CSS (Modern aesthetic, variables, glassmorphism)
+- LocalStorage
 
-## Suggested workflow
+## How to Run Locally
+1. Clone the repository.
+2. Open `index.html` directly in your browser.
+3. Click "Скинути демо-дані" (Reset Demo Data) to populate the inventory with sample equipment.
 
-1. Create a new repository from this template.
-2. Add the project requirements as markdown under `requirements/`.
-3. Invoke the `requirements-to-github-pages` skill inside the new repository.
-4. Let the skill:
-   - assess feasibility;
-   - choose the simplest viable stack;
-   - document SDRs;
-   - implement the app;
-   - add demo data and reset flow;
-   - update deployment files.
+## Deployment
+This application is configured for deployment via GitHub Pages using GitHub Actions. Upon pushing to the `main` or `master` branch, the workflow located in `.github/workflows/deploy.yml` will automatically build and publish the site.
 
-## Initial repository structure
-
-- `requirements/` - place the markdown requirements here
-- `docs/sdr/` - software decision records
-- `data/` - seed and demo data if needed
-- `.github/workflows/` - GitHub Pages deployment workflow
-
-## Notes
-
-This repository is intentionally minimal. It is not a finished application.
-It is a clean starting point for projects that will be generated from existing requirements.
+## Limitations
+* Note that because data is stored in `LocalStorage`, clearing browser history or cache will wipe the inventory data. There is no central server synchronization in this purely static version.
